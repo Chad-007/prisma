@@ -149,7 +149,7 @@ exports.Prisma.QueryMode = {
 
 exports.Prisma.ModelName = {
   User: 'User',
-  todo: 'todo'
+  Todo: 'Todo'
 };
 
 /**

@@ -14,12 +14,14 @@ model User {
   password String
   age      Int
   city     String
+  todos    Todo[]
 }
 
-model todo {
+model Todo {
   id         Int     @id @default(autoincrement())
   title      String
   decription String
   completed  Boolean
   userId     Int
+  user       User    @relation(fields: [userId], references: [id])
 }

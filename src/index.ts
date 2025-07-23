@@ -7,10 +7,10 @@ async function createUser() {
     const user = await client.user.findFirstOrThrow({
      where:{
         id :2
+     },
+     include:{
+        todos:true
      }
-    //  data: {
-    //     username:"alann"
-    //  }
     });
     console.log(user);
   } catch (error) {
